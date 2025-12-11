@@ -1,0 +1,22 @@
+<sys> ::= x[1];<eq2>;x[3];<eq4>
+
+<eq2> ::= <expr>
+<eq4> ::= <expr>
+
+<expr> ::= <term> | <expr><op><term>
+
+<term> ::= <factor> | <term> * <factor> | <term> / <factor>
+
+<factor> ::= <var> | <coeff> | (<expr>) | <trig>
+
+<op> ::= + | -
+
+<trig> ::= np.sin(<var>) | np.cos(<var>) | np.sin(<diff_angle>) | np.cos(<diff_angle>) | np.sin(<var>)*np.cos(<diff_angle>)
+
+<diff_angle> ::= (x[0]-x[2])
+
+<var> ::= x[0] | x[1] | x[2] | x[3]
+
+<coeff> ::= <digit>.<digit><digit> | 1.0 | 2.0 | 9.8
+
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9

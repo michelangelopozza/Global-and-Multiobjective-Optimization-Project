@@ -1,0 +1,17 @@
+<sys> ::= <eq1>;<eq2>
+
+<eq1> ::= <signed_term> | <eq1> <op> <signed_term>
+<eq2> ::= <signed_term> | <eq2> <op> <signed_term>
+
+<signed_term> ::= <sign><coeff>*<factor>
+<sign> ::=  | -
+
+<op> ::= + | -
+
+<factor> ::= <trig_func> | <var> | <composed>
+<trig_func> ::= np.sin(<var>) | np.cos(<var>)
+<composed> ::= np.sin(<coeff>*<var>) | np.cos(<coeff>*<var>)
+
+<var> ::= x[0] | x[1]
+<coeff> ::= <digit>.<digit> | <digit>.<digit><digit> | 9.8 | 1.0
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9

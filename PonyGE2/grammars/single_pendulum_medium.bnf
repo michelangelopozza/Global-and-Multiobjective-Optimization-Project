@@ -1,0 +1,14 @@
+<sys> ::= <eq1>;<eq2>
+
+<eq1> ::= <signed_term> | <eq1> <op> <signed_term>
+<eq2> ::= <signed_term> | <eq2> <op> <signed_term>
+
+<signed_term> ::= <sign><coeff>*<factor>
+<sign> ::=  | -
+
+<op> ::= + | -
+
+<factor> ::= np.sin(<var>) | <var>
+
+<var> ::= x[0] | x[1]
+<coeff> ::= 0.1 | 1.0 | 9.8

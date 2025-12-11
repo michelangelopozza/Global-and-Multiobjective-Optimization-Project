@@ -103,4 +103,4 @@ The parameter selection was driven by a literature review and the necessary trad
 
 ---
 
-_This document was partially created with the help of Gemini Pro (translation and structure)_
+_This README was partially created with the help of Gemini Pro (translation and structure)_
